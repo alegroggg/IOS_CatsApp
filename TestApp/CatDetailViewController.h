@@ -16,5 +16,6 @@
 @property (strong,nonatomic) NSString * Name;
 @property(strong,nonatomic) NSString * Desc;
 @property(strong,nonatomic) NSString * Image;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *gesture;
 
 @end

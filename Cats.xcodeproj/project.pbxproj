@@ -485,6 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = GGSoft.TestApp;
 				PRODUCT_NAME = Cats;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -500,6 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = GGSoft.TestApp;
 				PRODUCT_NAME = Cats;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

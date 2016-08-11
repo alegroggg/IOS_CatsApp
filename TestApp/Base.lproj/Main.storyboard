@@ -128,15 +128,19 @@
                         <viewControllerLayoutGuide type="top" id="RUq-qu-MvK"/>
                         <viewControllerLayoutGuide type="bottom" id="Ove-Iu-3Ul"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BRE-a2-Vdo">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BRE-a2-Vdo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitty Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTV-wn-3zE">
+                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitty Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTV-wn-3zE">
                                 <rect key="frame" x="99" y="109" width="123" height="33"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OtF-1l-wlZ" appends="YES" id="Hla-gi-VkJ"/>
+                                </connections>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitty desc" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29S-LW-J7P">
                                 <rect key="frame" x="120" y="150" width="80" height="22"/>
@@ -144,9 +148,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Domain-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="PZr-EC-y8R">
-                                <rect key="frame" x="135" y="371" width="50" height="50"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVW-Ct-5c8">
                                 <rect key="frame" x="131" y="188" width="59" height="30"/>
                                 <state key="normal" title="Location"/>
@@ -161,6 +162,13 @@
                                     <segue destination="A1H-yw-Eb6" kind="show" id="1PQ-ET-7Is"/>
                                 </connections>
                             </button>
+                            <imageView tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Domain-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="PZr-EC-y8R">
+                                <rect key="frame" x="135" y="371" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="i51-v1-FgM" appends="YES" id="4gp-J6-jag"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -184,6 +192,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYZ-NZ-y8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="i51-v1-FgM">
+                    <connections>
+                        <segue destination="A1H-yw-Eb6" kind="show" id="qyY-bh-57l"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OtF-1l-wlZ"/>
             </objects>
             <point key="canvasLocation" x="1800" y="758"/>
         </scene>
@@ -320,8 +334,8 @@
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dDn-Wd-4tg">
                                 <rect key="frame" x="141" y="419" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" red="0.33964275459999999" green="0.64255894680000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -413,4 +427,7 @@
         <image name="Domain-50.png" width="50" height="50"/>
         <image name="Switch.png" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qyY-bh-57l"/>
+    </inferredMetricsTieBreakers>
 </document>
