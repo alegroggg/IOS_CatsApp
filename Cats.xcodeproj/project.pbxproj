@@ -24,9 +24,12 @@
 		841B14401D5519B300DBBE0D /* cat4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841B143D1D5519B300DBBE0D /* cat4.jpg */; };
 		841B14431D55204A00DBBE0D /* CatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B14421D55204A00DBBE0D /* CatDetailViewController.m */; };
 		841B14461D55451A00DBBE0D /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B14451D55451A00DBBE0D /* RequestViewController.m */; };
+		8484806F1D6391830057740A /* CatCollectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8484806E1D6391830057740A /* CatCollectionDetailViewController.m */; };
 		84FD2A6F1D56B3E5009AADD7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FD2A6E1D56B3E5009AADD7 /* MapKit.framework */; };
 		84FD2A721D56B557009AADD7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD2A711D56B557009AADD7 /* MapViewController.m */; };
 		84FD2A751D57FC37009AADD7 /* GalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD2A741D57FC37009AADD7 /* GalleryView.m */; };
+		84FD2A7B1D5D0EB0009AADD7 /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD2A7A1D5D0EB0009AADD7 /* CollectionController.m */; };
+		84FD2A7E1D5D1485009AADD7 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD2A7D1D5D1485009AADD7 /* CollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,11 +78,17 @@
 		841B14421D55204A00DBBE0D /* CatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatDetailViewController.m; sourceTree = "<group>"; };
 		841B14441D55451A00DBBE0D /* RequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewController.h; sourceTree = "<group>"; };
 		841B14451D55451A00DBBE0D /* RequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
+		8484806D1D6391830057740A /* CatCollectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatCollectionDetailViewController.h; sourceTree = "<group>"; };
+		8484806E1D6391830057740A /* CatCollectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatCollectionDetailViewController.m; sourceTree = "<group>"; };
 		84FD2A6E1D56B3E5009AADD7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84FD2A701D56B557009AADD7 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		84FD2A711D56B557009AADD7 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		84FD2A731D57FC37009AADD7 /* GalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryView.h; path = ../GalleryView.h; sourceTree = "<group>"; };
 		84FD2A741D57FC37009AADD7 /* GalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryView.m; path = ../GalleryView.m; sourceTree = "<group>"; };
+		84FD2A791D5D0EB0009AADD7 /* CollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionController.h; sourceTree = "<group>"; };
+		84FD2A7A1D5D0EB0009AADD7 /* CollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionController.m; sourceTree = "<group>"; };
+		84FD2A7C1D5D1485009AADD7 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		84FD2A7D1D5D1485009AADD7 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,12 @@
 				84FD2A711D56B557009AADD7 /* MapViewController.m */,
 				84FD2A731D57FC37009AADD7 /* GalleryView.h */,
 				84FD2A741D57FC37009AADD7 /* GalleryView.m */,
+				84FD2A791D5D0EB0009AADD7 /* CollectionController.h */,
+				84FD2A7A1D5D0EB0009AADD7 /* CollectionController.m */,
+				84FD2A7C1D5D1485009AADD7 /* CollectionCell.h */,
+				84FD2A7D1D5D1485009AADD7 /* CollectionCell.m */,
+				8484806D1D6391830057740A /* CatCollectionDetailViewController.h */,
+				8484806E1D6391830057740A /* CatCollectionDetailViewController.m */,
 				8401B9AA1D52AD47005CA5E4 /* Supporting Files */,
 			);
 			path = TestApp;
@@ -330,6 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B14431D55204A00DBBE0D /* CatDetailViewController.m in Sources */,
+				8484806F1D6391830057740A /* CatCollectionDetailViewController.m in Sources */,
+				84FD2A7E1D5D1485009AADD7 /* CollectionCell.m in Sources */,
+				84FD2A7B1D5D0EB0009AADD7 /* CollectionController.m in Sources */,
 				841B143A1D55139C00DBBE0D /* Cat.m in Sources */,
 				841B14461D55451A00DBBE0D /* RequestViewController.m in Sources */,
 				84FD2A751D57FC37009AADD7 /* GalleryView.m in Sources */,
